@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --color-white     : #ffffff;
+  --color-orange    : #ff5b00;
+  --color-yellow    : #ff9900;
+  --color-red       : #cc3348;
+  --color-black-o   : #3e3e3e;
+  --color-white-1   : #f6fafc;
+  --color-gradient-1: #000c67;
+  --color-gradient-2: #007be5;
+  --color-touquise  : #00deef;
+  --color-shadow    : #9bd2f4;
+}
+
+* {
+  margin     : 0;
+  padding    : 0;
+  box-sizing : border-box;
+  font-family: 'M PLUS Rounded 1c', 'Space Mono';
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* INICIO */
+body {
+  background-color: var(--color-white-1);
+}
+
+.sombra {
+  filter        : drop-shadow(0em 30px 20px var(--color-shadow));
+  -webkit-filter: drop-shadow(0em 30px 20px var(--color-shadow));
+}
+
+.inicio {
+  background: linear-gradient(to right, var(--color-gradient-1), var(--color-gradient-2));
+  clip-path : polygon(0 0, 100% 0, 100% 54%, 51% 89%, 0 53%);
+  height    : 90vh;
+  padding   : 0 20px;
+}
+
+.inicio .contenido {
+  max-width: 1100px;
+  margin   : auto;
+  color    : var(--color-white);
+}
+
+.inicio header {
+  display        : flex;
+  justify-content: space-between;
+  padding        : 30px 0;
+  align-items    : center;
+}
+
+.inicio .logo {
+  display    : flex;
+  align-items: center;
+  color      : var(--color-touquise);
+  font-size  : 25px;
+}
+
+.inicio .logo i {
+  display     : inline-block;
+  margin-right: 15px;
+}
+
+#inicio header .nav a {
+  color          : var(--color-white);
+  text-decoration: none;
+  display        : inline-block;
+  padding        : 5px 10px;
+  text-transform : uppercase;
+  border         : 2px solid transparent;
+}
+
+#inicio header .nav a:hover {
+  border-bottom: 2px solid var(--color-orange);
+}
+
+.inicio .redes a {
+  text-decoration: none;
+  color          : var(--color-white);
+  display        : inline-block;
+  margin         : 0 10px;
+}
+
+.inicio .redes a:hover {
+  color: var(--color-orange);
+}
+
+.inicio .fila {
+  display       : flex;
+  margin-top    : 50px;
+  padding-bottom: 100px;
+}
+
+.inicio .fila .col {
+  width        : 50%;
+  /* align-self: center; */
+}
+
+.inicio .fila .col h2 {
+  margin-bottom: 15px;
+  font-size    : 40px;
+}
+
+.inicio .fila .col p {
+  margin-bottom: 20px;
+}
+
+.inicio .fila .col .contenedor-img {
+  max-width: 400px;
+  margin   : auto;
+}
+
+.inicio .fila .col .contenedor-img img {
+  width: 100%;
+}
+
+.inicio .fila .col button {
+  background        : none;
+  width             : fit-content;
+  padding           : 5px 40px;
+  border            : 2px solid linear-gradient(to right, var(--color-red), var(--color-yellow));
+  color             : var(--color-white);
+  background        : linear-gradient(to right, var(--color-red), var(--color-yellow));
+  transition        : .5s;
+  -webkit-transition: .5s;
+  -moz-transition   : .5s;
+  -ms-transition    : .5s;
+  -o-transition     : .5s;
+  cursor            : pointer;
+}
+
+.inicio .fila .col button:hover {
+  transform        : scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform   : scale(1.1);
+  -ms-transform    : scale(1.1);
+  -o-transform     : scale(1.1);
+}
+
+#icono-nav {
+  height               : 30px;
+  width                : 30px;
+  text-align           : center;
+  line-height          : 30px;
+  border-radius        : 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius   : 50%;
+  -ms-border-radius    : 50%;
+  -o-border-radius     : 50%;
+  transition           : .3s;
+  -webkit-transition   : .3s;
+  -moz-transition      : .3s;
+  -ms-transition       : .3s;
+  -o-transition        : .3s;
+  cursor               : pointer;
+  display              : none;
+}
+
+#icono-nav:hover {
+  background-color: var(--color-black-o);
+}
+
+/* SERVICIOS */
+
+
+/* HABILIDADES */
+
+
+/* TRABAJOS */
+
+
+/* CONTACTOS */
+
