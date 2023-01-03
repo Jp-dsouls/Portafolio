@@ -5,6 +5,10 @@
   --color-orange    : #ff5b00;
   --color-yellow    : #ff9900;
   --color-red       : #cc3348;
+  --color-gray      : #8d8d8d;
+  --color-purple    : #572658;
+  --color-blue      : #038aee;
+  --color-green     : #0e5f41;
   --color-black-o   : #3e3e3e;
   --color-white-1   : #f6fafc;
   --color-gradient-1: #000c67;
@@ -166,7 +170,115 @@ body {
 }
 
 /* SERVICIOS */
+.servicios {
+  max-width: 1100vh;
+  margin   : auto;
+  padding  : 0 20px;
+  position : relative;
+  top      : -170px;
+}
 
+.servicios .fila {
+  display        : flex;
+  justify-content: space-around;
+  margin-bottom  : 50px;
+}
+
+.servicios .fila .col {
+  text-align: center;
+  width     : 30%;
+}
+
+.servicios .fila .col .card {
+  border               : 1px solid var(--color-gray);
+  height               : 400px;
+  background-color     : var(--color-white);
+  padding              : 30px;
+  border-radius        : 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius   : 20px;
+  -ms-border-radius    : 20px;
+  -o-border-radius     : 20px;
+  position             : relative;
+}
+
+.servicios .icono {
+  width                : 70px;
+  height               : 70px;
+  margin               : auto;
+  border-radius        : 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius   : 50%;
+  -ms-border-radius    : 50%;
+  -o-border-radius     : 50%;
+  display              : flex;
+  align-items          : center;
+  justify-content      : center;
+  margin-bottom        : 30px;
+}
+
+.servicios .icono .circulo {
+  width                : 90%;
+  height               : 90%;
+  border-radius        : 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius   : 50%;
+  -ms-border-radius    : 50%;
+  -o-border-radius     : 50%;
+  border               : 3px solid var(--color-white);
+  display              : flex;
+  justify-content      : center;
+  align-items          : center;
+  color                : var(--color-white);
+  font-size            : 20px;
+}
+
+.color1 {
+  background: linear-gradient(var(--color-yellow), var(--color-orange));
+}
+
+.color2 {
+  background: linear-gradient(var(--color-blue), var(--color-gradient-1));
+}
+
+.color3 {
+  background: linear-gradient(var(--color-touquise), var(--color-gradient-1));
+}
+
+.color4 {
+  background: linear-gradient(var(--color-green), var(--color-gradient-1));
+}
+
+.color5 {
+  background: linear-gradient(var(--color-gray), var(--color-gradient-1));
+}
+
+.color6 {
+  background: linear-gradient(var(--color-red), var(--color-purple));
+}
+
+.servicios h3 {
+  margin-bottom: 20px;
+}
+
+.servicios .card p {
+  color      : var(--color-gray);
+  line-height: 28px;
+  font-size  : 12px;
+}
+
+.servicios .card a {
+  text-decoration  : none;
+  color            : var(--color-gradient-2);
+  position         : absolute;
+  bottom           : 20px;
+  left             : 50%;
+  transform        : translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform   : translateX(-50%);
+  -ms-transform    : translateX(-50%);
+  -o-transform     : translateX(-50%);
+}
 
 /* HABILIDADES */
 
@@ -175,4 +287,3 @@ body {
 
 
 /* CONTACTOS */
-
