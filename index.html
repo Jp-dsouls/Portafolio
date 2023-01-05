@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="#">
   <!-- JQUERY -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
     integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
@@ -34,25 +36,14 @@
           </div>
           <div class="nav" id="nav">
             <a href="#inicio">Inicio</a>
-            <a href="#Servicios">Servicios</a>
-            <a href="#Habilidades">Habilidades</a>
-            <a href="#Trabajos">Trabajos</a>
-            <a href="#Contacto">Contacto</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#trabajos">Trabajos</a>
+            <a href="#contacto">Contacto</a>
           </div>
           <div id="icono-nav">
             <i class="fa-solid fa-bars-staggered"></i>
           </div>
-          <!-- <div class="redes">
-            <a href="">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-          </div> -->
         </header>
         <div class="fila">
           <div class="col">
@@ -244,10 +235,10 @@
   <section class="trabajos" id="trabajos">
     <h2>Mis trabajos</h2>
     <main>
-      <a href="javascript:void(0)" class="borde" id="item">Todos</a>
-      <a href="javascript:void(0)" class="borde" id="disenio">Diseño</a>
-      <a href="javascript:void(0)" class="borde" id="juegos">Juegos</a>
-      <a href="javascript:void(0)" class="borde" id="mockups">Mockups</a>
+      <a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
+      <a href="javascript:void(0)" class="borde" id="disenio" onclick="verCategoria('disenio')">Diseño</a>
+      <a href="javascript:void(0)" class="borde" id="juegos" onclick="verCategoria('juegos')">Juegos</a>
+      <a href="javascript:void(0)" class="borde" id="mockups" onclick="verCategoria('mockups')">Mockups</a>
     </main>
     <div class="galeria">
       <div class="item disenio">
@@ -314,7 +305,7 @@
   </section>
 
   <!-- CONTACTOS -->
-  <section class="contacto" id="contactos">
+  <section class="contacto" id="contacto">
     <div class="contenedor-contacto">
       <h2>Contacto</h2>
       <div class="fila">

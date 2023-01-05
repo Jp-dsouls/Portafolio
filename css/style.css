@@ -436,7 +436,7 @@ body {
 
 /* CONTACTOS */
 .contacto {
-  background     : linear-gradient(rgba(0, 12, 103, 1), rgba(0, 12, 103, .8)), url();
+  background     : linear-gradient(rgba(0, 12, 103, 1), rgba(0, 12, 103, .8)), url(http://sudhirnanavati.in/images/contact-img.jpg);
   background-size: cover;
   color          : var(--color-white);
   margin-top     : 100px;
@@ -455,6 +455,7 @@ body {
 
 .contacto .contenedor-contacto .fila {
   display: flex;
+  gap    : 60px;
 }
 
 .contacto .contenedor-contacto .info {
