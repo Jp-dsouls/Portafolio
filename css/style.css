@@ -492,3 +492,10 @@ body {
 }
 
 /* Footer */
+footer {
+  background-color: var(--color-black);
+  color           : var(--color-white);
+  padding         : 7px 0;
+  font-size       : 14px;
+  text-align      : center;
+}
