@@ -430,14 +430,65 @@ body {
 }
 
 .trabajos .galeria .item:hover .info {
-  opacity   : 1;
-  top       : 0;
+  opacity: 1;
+  top    : 0;
 }
 
-
-
-
-
-
-
 /* CONTACTOS */
+.contacto {
+  background     : linear-gradient(rgba(0, 12, 103, 1), rgba(0, 12, 103, .8)), url();
+  background-size: cover;
+  color          : var(--color-white);
+  margin-top     : 100px;
+  padding        : 80px 20px;
+}
+
+.contacto .contenedor-contacto {
+  max-width: 1100px;
+  margin   : auto;
+}
+
+.contacto h2 {
+  text-align    : center;
+  padding-bottom: 30px;
+}
+
+.contacto .contenedor-contacto .fila {
+  display: flex;
+}
+
+.contacto .contenedor-contacto .fila .col {
+  width: 50%;
+}
+
+.contacto .contenedor-contacto .info {
+  margin-bottom: 30px;
+  border-left  : 3px solid var(--color-gray);
+  padding-left : 8px;
+}
+
+.contacto .contenedor-contacto .info p {
+  color: var(--color-gray);
+}
+
+.contacto :is(input, textarea) {
+  width           : 100%;
+  border          : none;
+  background-color: transparent;
+  padding         : 10px;
+  border          : 1px solid var(--color-gray);
+  margin-bottom   : 20px;
+  outline         : none;
+  color           : var(--color-white);
+}
+
+.contacto .contenedor-contacto .btn {
+  background-color: none;
+  padding         : 5px 40px;
+  border          : 2px solid;
+  color           : var(--color-white);
+  cursor          : pointer;
+  background      : linear-gradient(to right, var(--color-orange), var(--color-yellow));
+}
+
+/* Footer */
