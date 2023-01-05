@@ -189,13 +189,13 @@ body {
   text-align: center;
   width     : 30%;
   min-height: 350px;
-  max-height: 420px;
+  max-height: 400px;
 }
 
 .servicios .fila .col .card {
   border               : 1px solid var(--color-gray);
   max-height           : 420px;
-  min-height           : 400px;
+  min-height           : 330px;
   background-color     : var(--color-white);
   padding              : 30px;
   border-radius        : 20px;
@@ -649,8 +649,8 @@ footer {
 
   .servicios .fila .col .card {
     margin-bottom: 20px;
-    min-height   : 330px;
-    max-height   : 370px;
+    min-height   : 300px;
+    max-height   : 310px;
   }
 
   .habilidades {
@@ -718,7 +718,7 @@ footer {
   }
 
   .servicios .fila .col .card {
-    height: 430px;
+    max-height: 320px;
   }
 
   .habilidades .fila {
