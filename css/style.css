@@ -188,11 +188,14 @@ body {
 .servicios .fila .col {
   text-align: center;
   width     : 30%;
+  min-height: 350px;
+  max-height: 420px;
 }
 
 .servicios .fila .col .card {
   border               : 1px solid var(--color-gray);
-  height               : 400px;
+  max-height           : 420px;
+  min-height           : 400px;
   background-color     : var(--color-white);
   padding              : 30px;
   border-radius        : 20px;
@@ -389,6 +392,8 @@ body {
   -moz-border-radius   : 10px;
   -ms-border-radius    : 10px;
   -o-border-radius     : 10px;
+  min-height           : 230px;
+  max-height           : 240px;
 }
 
 .trabajos .galeria .item .info {
@@ -567,6 +572,12 @@ footer {
   }
 }
 
+@media screen and (max-width:869px) {
+  .servicios .fila .col .card {
+    height: 420px;
+  }
+}
+
 @media screen and (max-width:800px) {
   .redes {
     display: none;
@@ -638,6 +649,8 @@ footer {
 
   .servicios .fila .col .card {
     margin-bottom: 20px;
+    min-height   : 330px;
+    max-height   : 370px;
   }
 
   .habilidades {
