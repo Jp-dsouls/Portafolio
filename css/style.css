@@ -1,21 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-  --color-white     : #ffffff;
-  --color-orange    : #ff5b00;
-  --color-yellow    : #ff9900;
-  --color-red       : #cc3348;
-  --color-gray      : #8d8d8d;
-  --color-purple    : #572658;
-  --color-blue      : #038aee;
-  --color-green     : #0e5f41;
-  --color-black     : #000000;
-  --color-black-o   : #3e3e3e;
-  --color-white-1   : #f6fafc;
-  --color-gradient-1: #000c67;
-  --color-gradient-2: #007be5;
-  --color-touquise  : #00deef;
-  --color-shadow    : #9bd2f4;
+  --color-white              : #ffffff;
+  --color-orange             : #ff5b00;
+  --color-yellow             : #ff9900;
+  --color-red                : #cc3348;
+  --color-gray               : #8d8d8d;
+  --color-purple             : #572658;
+  --color-blue               : #038aee;
+  --color-green              : #0e5f41;
+  --color-black              : #000000;
+  --color-black-o            : #3e3e3e;
+  --color-white-1            : #f6fafc;
+  --color-gradient-1         : #000c67;
+  --color-gradient-2         : #007be5;
+  --color-touquise           : #00deef;
+  --color-shadow             : #9bd2f4;
+  --gradient-blue-to-sky-blue: linear-gradient(to right, #000c67, #007be5);
 }
 
 * {
@@ -40,7 +41,7 @@ body {
 }
 
 .inicio {
-  background: linear-gradient(to right, var(--color-gradient-1), var(--color-gradient-2));
+  background: var(--gradient-blue-to-sky-blue);
   clip-path : polygon(0 0, 100% 0, 100% 54%, 51% 89%, 0 53%);
   height    : 90vh;
   padding   : 0 20px;
@@ -124,9 +125,9 @@ body {
   width: 100%;
 }
 
-.inicio .fila .col button {
+.inicio .fila .col .button {
   background        : none;
-  width             : fit-content;
+  width             : moz-fit-content;
   padding           : 5px 40px;
   border            : 2px solid linear-gradient(to right, var(--color-red), var(--color-yellow));
   color             : var(--color-white);
@@ -137,9 +138,10 @@ body {
   -ms-transition    : .5s;
   -o-transition     : .5s;
   cursor            : pointer;
+  text-decoration   : none;
 }
 
-.inicio .fila .col button:hover {
+.inicio .fila .col .button:hover {
   transform        : scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform   : scale(1.1);
@@ -286,7 +288,7 @@ body {
 
 /* HABILIDADES */
 .habilidades {
-  background: linear-gradient(to right, var(--color-gradient-1), var(--color-gradient-2));
+  background: var(--gradient-blue-to-sky-blue);
   color     : var(--color-white);
   padding   : 60px 0;
   position  : relative;
@@ -419,11 +421,12 @@ body {
 }
 
 .trabajos .galeria .item .info span {
-  color  : var(--color-gray);
-  display: inline-block;
-  border : 2px solid var(--color-gray);
-  margin : 0 3px;
-  padding: 0 5px;
+  color        : var(--color-gray);
+  display      : inline-block;
+  border       : 2px solid var(--color-gray);
+  margin       : 0 3px;
+  padding      : 0 5px;
+  margin-bottom: 2.5px;
 }
 
 .trabajos .galeria .item .info a {
@@ -504,15 +507,16 @@ body {
 }
 
 .redes-sociales ul {
-  display        : flex;
-  flex-direction : column;
-  -moz-box-align : center;
-  align-items    : center;
-  justify-content: center;
-  margin         : 0px;
-  padding        : 0px;
-  list-style     : none;
-  gap            : 5px;
+  display          : flex;
+  flex-direction   : column;
+  -webkit-box-align: center;
+  align-items      : center;
+  justify-content  : center;
+  margin           : 0px;
+  padding          : 0px;
+  list-style       : none;
+  gap              : 5px;
+  color            : var(--color-gray);
 }
 
 .redes-sociales ul::after {
@@ -521,7 +525,7 @@ body {
   width           : 2px;
   height          : 90px;
   margin          : 0px auto;
-  background-color: #a8b2d1;
+  background-color: var(--color-gray);
 }
 
 .redes-sociales ul li {
